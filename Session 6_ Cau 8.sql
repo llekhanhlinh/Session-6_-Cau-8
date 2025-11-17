@@ -79,6 +79,7 @@ order by TenDocGia asc;
 create table PhieuMuon(
 	MaPhieuMuon int primary key auto_increment,
     NgayMuon date,
+	NgayTra date null,
     MaDocGia int,
     foreign key (MaDocGia) references DocGia(MaDocGia),
     MaSach int,
