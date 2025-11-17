@@ -11,11 +11,8 @@ create table DocGia(
 	MaDocGia int primary key auto_increment,
     TenDocGia varchar(100) not null,
     DiaChi varchar(50),
-    SoDienThoai varchar(15) 
+    SoDienThoai varchar(15) unique
 );
-
-select distinct SoDienThoai
-from DocGia;
 
 insert into TacGia(TenTacGia, QuocTich)
 values ('Nguyễn Nhật Ánh', 'Việt Nam'),
